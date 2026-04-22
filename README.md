@@ -7,4 +7,3 @@ Trabajo Practico para la materia de Taller de lenguajes de marcado y tecnologias
 - Mauro Daniel Viveros
 - Uriel Peralta
 - Ricardo Ruiz 
-- Hola
