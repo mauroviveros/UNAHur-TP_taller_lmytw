@@ -9,6 +9,7 @@
 - Mauro Daniel Viveros
 - Uriel Peralta
 - Ricardo Ruiz
+- Tomás Dalke
 
 ## 📋 Descripción del Proyecto
 
