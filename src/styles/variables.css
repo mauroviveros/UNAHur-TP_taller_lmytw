@@ -1,0 +1,33 @@
+:root{
+    --color-paper: #FAF1DF;
+    --color-ink: #110904;
+    --color-primary: #FF592C;
+    --color-tertiary: #f3cb00;
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+}
+.bg-tertiary {
+    background-color: var(--color-tertiary);
+}
+.bg-ink {
+    background-color: var(--color-ink);
+}
+.bg-paper {
+    background-color: var(--color-paper);
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-tertiary {
+    color: var(--color-tertiary);
+}
+.text-ink {
+    color: var(--color-ink);
+}
+.text-paper { 
+    color: var(--color-paper);
+}

@@ -1,0 +1,44 @@
+.main-content{
+
+}
+
+section#hero{
+
+    & > article {
+        padding: 2.5rem 3rem 1.5rem 3rem;
+
+        & > div {
+            /* mt-8 grid gap-8 md:grid-cols-12 */
+            margin-top: 2rem;
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: repeat(12, 1fr);
+
+
+            & > p {
+                /* md:col-span-5 md:col-start-1 font-serif text-2xl leading-snug */
+                grid-column: 1 / span 6;
+                font-family: "Fraunces";
+                font-size: 1.5rem;
+                line-height: 1.375;
+                margin: 0;
+            }
+
+            & > div {
+                /* md:col-span-4 md:col-start-9 flex flex-col gap-3 self-end */
+                grid-column: 9 / span 4;
+                display: flex;
+                flex-direction: column;
+                gap: 0.75rem;
+                align-self: end;
+            }
+        }
+    }
+
+    & h1 {
+        font-size: 10rem;
+        line-height: 0.85;
+        text-transform: uppercase;
+        margin: 1.5rem 0 0 0;
+    }
+}
