@@ -93,6 +93,10 @@ aside {
                 &:hover {
                     border-color: var(--color-ink);
                     background-color: var(--color-primary);
+
+                    & p {
+                        transform: translate(4px, 0);
+                    }
                 }
 
                 &.active {
@@ -112,6 +116,7 @@ aside {
                     font-size: 1.25rem;
                     font-weight: bold;
                     text-transform: uppercase;
+                    transition: all 0.2s ease-in-out;
                     margin: 0;
                 }
             }
