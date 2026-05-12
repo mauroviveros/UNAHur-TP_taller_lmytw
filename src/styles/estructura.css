@@ -29,9 +29,15 @@ aside {
             color: var(--color-ink);
             text-decoration: none;
             flex: 1;
+            transition: all 0.2s ease-in-out;
 
             &:hover {
                 background-color: var(--color-tertiary);
+
+                & span.brand-logo {
+                    transform: translate(-3px, -3px);
+                    box-shadow: 6px 6px 0 0 var(--color-ink);
+                }
             }
 
             & span.brand-logo {
@@ -46,6 +52,7 @@ aside {
                 font-size: 1.25rem;
                 border: 2px solid var(--color-ink);
                 box-shadow: 3px 3px 0 0 var(--color-ink);
+                transition: all 0.2s ease-in-out;
             }
 
             & p {
