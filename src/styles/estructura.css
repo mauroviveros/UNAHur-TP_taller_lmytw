@@ -178,6 +178,12 @@ aside {
     & > main > section {
         border-bottom: 3px solid var(--color-ink);
     }
+
+    & > footer {
+        background-color: var(--color-ink);
+        color: var(--color-paper);
+        text-align: center;
+        padding: 1rem;
 }
 
 

@@ -203,12 +203,20 @@ section#contacto {
         transform: rotate(2deg);
 
         & > header {
-            /* border-b-[3px] border-ink bg-spot-2 p-4 */
+            border-bottom: var(--border-ink);
+            background-color: var(--color-spot-2);
+            padding: 1rem;
+        }
 
+        & ul li span {
+            font-family: monospace;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-size: 1rem;
+            font-weight: bold;
         }
     }
 }
-
 
 h1 {
     font-size: 10rem;
@@ -268,4 +276,16 @@ h4 {
         }
     }
 
+}
+
+
+.main-content > footer {
+    & p {
+        margin: 0;
+        font-family: monospace;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        opacity: 0.7;
+    }
 }
