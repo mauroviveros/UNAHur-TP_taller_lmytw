@@ -8,16 +8,15 @@ section#hero{
         padding: 2.5rem 3rem 1.5rem 3rem;
 
         & > div {
-            /* mt-8 grid gap-8 md:grid-cols-12 */
             margin-top: 2rem;
             display: grid;
             gap: 2rem;
             grid-template-columns: repeat(12, 1fr);
+            align-items: center;
 
 
             & > p {
-                /* md:col-span-5 md:col-start-1 font-serif text-2xl leading-snug */
-                grid-column: 1 / span 6;
+                grid-column: 1 / span 7;
                 font-family: "Fraunces";
                 font-size: 1.5rem;
                 line-height: 1.375;
@@ -25,7 +24,6 @@ section#hero{
             }
 
             & > div {
-                /* md:col-span-4 md:col-start-9 flex flex-col gap-3 self-end */
                 grid-column: 9 / span 4;
                 display: flex;
                 flex-direction: column;

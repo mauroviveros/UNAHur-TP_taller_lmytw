@@ -182,11 +182,6 @@ aside {
 
 
 .btn {
-    /*
-        group inline-flex items-center justify-between gap-3 border-[3px] border-ink bg-spot px-5 py-4 font-display 
-        text-xl text-paper shadow-brut hover:translate-x-[-3px] hover:translate-y-[-3px] hover:shadow-brut-lg transition-all
-    */
-
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
@@ -215,4 +210,7 @@ aside {
         background-color: var(--color-paper);
     }
 
+    & > i {
+        font-size: 1.5rem;
+    }
 }
