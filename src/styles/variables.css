@@ -8,6 +8,10 @@
     --color-spot-2: #00D6D7;
     --color-spot-3: #F3CB00;
     --color-spot-4: #B24DC8;
+
+    --border-ink: 3px solid var(--color-ink);
+    --shadow-ink: 3px 3px 0 0 var(--color-ink);
+    --shadow-ink-lg: 6px 6px 0 0 var(--color-ink);
 }
 
 .bg-primary { background-color: var(--color-primary); }

@@ -117,7 +117,7 @@
 
                 <figure>
                     <!-- imagen de algun centro comunitario que tenga convidAR-->
-                    <img src="https://picsum.photos/1600/1024" alt="" width="1600" height="1024" />
+                    <img src="assets/images/hero.jpg" alt="" width="1600" height="1024" />
 
                     <figcaption>
                         Foto: Centro comunitario · 2024
@@ -147,14 +147,15 @@
                 </blockquote>
             </section>
 
-            <br><br><br>
-
             <section id="programas">
-                <h2>Lo que hacemos</h2>
-                <div>
+                <header>
+                    <h2>Lo que hacemos</h2>
+                    <a href="/programas.html">Ver todos →</a>
+                </header>
+                <div class="card-container">
                     <article class="card">
-                        <img src="https://picsum.photos/200?random=1" alt="Ejemplo Programa 1">
-                        <div>
+                        <img src="assets/images/programas/spot-1.jpg" alt="Niñas y niños pintando en un taller de arte" width="1024" height="768" />
+                        <div class="card__content bg-spot-1">
                             <h3>Arte que convida</h3>
                             <p>Talleres de muralismo, musica y juego teatral para niñas, niños de los barrios. El arte
                                 como derechom, no como lujo.</p>
@@ -163,16 +164,16 @@
                     </article>
 
                     <article class="card">
-                        <img src="https://picsum.photos/200?random=2" alt="Ejemplo Programa 2">
-                        <div>
+                        <img src="assets/images/programas/spot-2.jpg" alt="Mentora acompañando a un adolescente con una notebook" width="1024" height="768" />
+                        <div class="card__content bg-spot-2">
                             <h3>Aprender juntos</h3>
                             <p>Apoyo escolar y mentoria para adolescentes.</p>
                         </div>
                     </article>
 
                     <article class="card">
-                        <img src="https://picsum.photos/200?random=3" alt="Ejemplo Programa 3">
-                        <div>
+                        <img src="assets/images/programas/spot-3.jpg" alt="Voluntarios entregando bolsones a familias" width="1024" height="768" />
+                        <div class="card__content bg-spot-3">
                             <h3>Familias en red</h3>
                             <p>Salud comunitaria y acompañamiento integral.</p>
                         </div>
@@ -180,26 +181,30 @@
                 </div>
             </section>
 
-            <br><br><br>
-
             <section id="motivacion">
-                <blockquote>Cuando un barrio se organiza, deja de pedir permiso para soñar. Eso es convidAR: El arte de
-                    la participación.</blockquote>
+                <i class="icon-quote text-primary" style="font-size: 3rem;"></i>
+                <blockquote>
+                    "Cuando un barrio se organiza, deja de pedir permiso para soñar. Eso es convidAR: El arte de la participación."
+                </blockquote>
                 <footer> - Samira Viveros, Un gato muy sabio</footer>
             </section>
 
-            <br><br><br>
-
             <section id="contacto">
-                <article class="card">
+                <article class="card card--contact">
                     <h2>Sumate. <br> El barrio te espera.</h2>
-                    <a href="./contacto.html">
+
+                    <a href="./contacto.html" class="btn btn-paper">
                         Escribinos
+                        <i class="icon-arrow-up-right"></i>
                     </a>
                 </article>
-            </section>
 
-            <br><br><br>
+                <article class="card card--proximo-evento">
+                    <header>
+                        <h4>Sábado 24/05</h4>
+                    </header>
+                </article>
+            </section>
         </main>
 
         <footer>

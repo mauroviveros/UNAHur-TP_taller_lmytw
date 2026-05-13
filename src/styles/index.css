@@ -35,7 +35,7 @@ section#hero{
 
     & > figure {
         position: relative;
-        border-top: 3px solid var(--color-ink);
+        border-top: var(--border-ink);
         margin: 0;
         height: fit-content;
         & > img {
@@ -52,8 +52,8 @@ section#hero{
             bottom: 0;
             right: 0;
             background-color: var(--color-paper);
-            border-top: 3px solid var(--color-ink);
-            border-left: 3px solid var(--color-ink);
+            border-top: var(--border-ink);
+            border-left: var(--border-ink);
             padding: 0.75rem 1.25rem;
             font-family: monospace;
             font-size: 0.75rem;
@@ -66,15 +66,15 @@ section#hero{
     & > blockquote {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        border-bottom: 3px solid var(--color-ink);
+        border-bottom: var(--border-ink);
         margin: 0;
 
         & > article {
             padding: 2.5rem;
-            border-top: 3px solid var(--color-ink);
+            border-top: var(--border-ink);
 
             &:not(:last-child) {
-                border-right: 3px solid var(--color-ink);
+                border-right: var(--border-ink);
             }
 
             & > h4 {
@@ -96,11 +96,176 @@ section#hero{
             }
         }
     }
+}
 
-    & h1 {
-        font-size: 10rem;
-        line-height: 0.85;
-        text-transform: uppercase;
-        margin: 1.5rem 0 0 0;
+section#programas {
+    padding: 3rem;
+
+    & > header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: end;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 2rem;
+
+        & > a {
+            font-family: monospace;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            color: var(--color-ink);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            text-underline-offset: 4px;
+
+            &:hover {
+                color: var(--color-primary);
+                text-decoration: underline;
+                transform: translateX(-3px);
+            }
+        }
     }
+
+    & .card-container {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, auto);
+
+        & .card {
+            grid-column: span 2;
+
+            &:first-child {
+                grid-column: span 4;
+                grid-row: span 2;
+
+                & .card__content {
+                    padding: 2rem;
+
+                    & > h3 {
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section#motivacion {
+    border-bottom: var(--border-ink);
+    background-color: var(--color-ink);
+    color: var(--color-paper);
+    padding: 4rem;
+
+    & > blockquote {
+        font-family: "Fraunces";
+        font-size: 3rem;
+        line-height: 1.25;
+        margin: 1.5rem 0 0 0;
+        max-width: 56rem
+    }
+
+    & > footer {
+        margin-top: 1.5rem;
+        font-family: monospace;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        opacity: 0.7;
+    }
+}
+
+section#contacto {
+    padding: 3rem;
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+
+    & .card.card--contact {
+        grid-column: span 2;
+        background-color: var(--color-spot-1);
+        padding: 3rem;
+
+        & > h2 {
+            color: var(--color-paper);
+            font-size: 4.25rem;
+        }
+
+        & > a {
+            width: fit-content;
+            margin-top: 2rem;
+        }
+    }
+
+    & .card.card--proximo-evento {
+        transform: rotate(2deg);
+
+        & > header {
+            /* border-b-[3px] border-ink bg-spot-2 p-4 */
+
+        }
+    }
+}
+
+
+h1 {
+    font-size: 10rem;
+    line-height: 0.85;
+    text-transform: uppercase;
+    margin: 1.5rem 0 0 0;
+}
+
+h2 {
+    font-size: 6rem;
+    line-height: 0.9;
+    text-transform: uppercase;
+    margin: 0.5rem 0 0 0;
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 1.25;
+    text-transform: uppercase;
+    margin: 0.25rem 0 0 0;
+}
+
+h4 {
+    font-size: 1.5rem;
+    line-height: 1.25;
+    text-transform: uppercase;
+    margin: 0.25rem 0 0 0;
+}
+
+.card {
+    
+    display: flex;
+    flex-direction: column;
+    border: var(--border-ink);
+    background-color: var(--color-paper);
+    box-shadow: var(--shadow-ink);
+    overflow: hidden;
+
+    & > img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        display: block;
+    }
+
+    & .card__content {
+        padding: 1.25rem;
+        border-top: var(--border-ink);
+        flex-grow: 1;
+
+        & > p {
+            font-family: "Fraunces";
+            font-size: 1.125rem;
+            margin: 0.75rem 0 0 0;
+            color: var(--color-ink);
+        }
+    }
+
 }
