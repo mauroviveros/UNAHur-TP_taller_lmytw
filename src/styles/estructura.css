@@ -148,6 +148,8 @@ aside {
 }
 
 .main-content {
+    flex-grow: 1;
+
     & > header {
         position: sticky;
         z-index: 30;
