@@ -9,6 +9,12 @@
     --color-spot-3: #F3CB00;
     --color-spot-4: #B24DC8;
 
+    --color-spot-1-light: #fab5a2;
+    --color-spot-2-light: #bfe0e0;
+    --color-spot-3-light: #eddf95;
+    --color-spot-4-light: #e992fc;
+
+
     --border-ink: 3px solid var(--color-ink);
     --shadow-ink: 3px 3px 0 0 var(--color-ink);
     --shadow-ink-lg: 6px 6px 0 0 var(--color-ink);
@@ -18,10 +24,10 @@
 .bg-tertiary { background-color: var(--color-tertiary); }
 .bg-ink { background-color: var(--color-ink); }
 .bg-paper { background-color: var(--color-paper); }
-.bg-spot-1 { background-color: var(--color-spot-1); }
-.bg-spot-2 { background-color: var(--color-spot-2); }
-.bg-spot-3 { background-color: var(--color-spot-3); }
-.bg-spot-4 { background-color: var(--color-spot-4); }
+.bg-spot-1 { background-color: var(--color-spot-1); !important; }
+.bg-spot-2 { background-color: var(--color-spot-2); !important; }
+.bg-spot-3 { background-color: var(--color-spot-3); !important; }
+.bg-spot-4 { background-color: var(--color-spot-4); !important; }
 
 .text-primary { color: var(--color-primary); }
 .text-tertiary { color: var(--color-tertiary); }

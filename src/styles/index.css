@@ -246,38 +246,6 @@ h4 {
     margin: 0.25rem 0 0 0;
 }
 
-.card {
-    
-    display: flex;
-    flex-direction: column;
-    border: var(--border-ink);
-    background-color: var(--color-paper);
-    box-shadow: var(--shadow-ink);
-    overflow: hidden;
-
-    & > img {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 4 / 3;
-        object-fit: cover;
-        display: block;
-    }
-
-    & .card__content {
-        padding: 1.25rem;
-        border-top: var(--border-ink);
-        flex-grow: 1;
-
-        & > p {
-            font-family: "Fraunces";
-            font-size: 1.125rem;
-            margin: 0.75rem 0 0 0;
-            color: var(--color-ink);
-        }
-    }
-
-}
-
 
 .main-content > footer {
     & p {

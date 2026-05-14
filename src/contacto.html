@@ -1,4 +1,3 @@
-<!-- Responsable: Tomás Dalke -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -16,6 +15,9 @@
     <!-- Estilos De la estructura base -->
     <link rel="stylesheet" href="./styles/variables.css">
     <link rel="stylesheet" href="./styles/estructura.css">
+
+    <!-- Estilos específicos para la página de contacto -->
+    <link rel="stylesheet" href="./styles/contacto.css">
 </head>
 <body>
         <aside>
@@ -78,7 +80,79 @@
         </header>
 
         <main>
+
+            <section id="formulario">
+                <h2>¡Ponete en contacto con nosotros!</h2>
+                <form action="">
+                    <fieldset>
+                        <label for="nombre">Nombre y Apellido</label>
+                        <input id="nombre" type="text" placeholder="Tu nombre y apellido" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="tu@email.com" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="asunto">Asunto</label>
+                        <input id="asunto" type="text" placeholder="El asunto de tu mensaje" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" placeholder="Contanos en que podemos ayudarte" rows="10" required></textarea>
+                    </fieldset>
+                </form>
+            </section>
+
+            <section id="redes-sociales">
+                <article class="card">
+                    <i class="icon-phone" style="color: var(--color-spot-1); background-color: var(--color-spot-1-light);"></i>
+
+                    <div>
+                        <h3 style="color: var(--color-spot-1)">
+                            Teléfono
+                        </h3>
+
+                        <p>+54 11 1234-5678</p>
+                        <p>0800 123 4567</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <i class="icon-mail" style="color: var(--color-spot-2); background-color: var(--color-spot-2-light);"></i>
+                    <div>
+                        <h3 style="color: var(--color-spot-2)">
+                            Email
+                        </h3>
+                        <p>info@convidar.com</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <i class="icon-clock" style="color: var(--color-spot-3); background-color: var(--color-spot-3-light);"></i>
+                    <div>
+                        <h3 style="color: var(--color-spot-3)">
+                            Horarios de atención
+                        </h3>
+                        <p>Lunes a viernes: 9:00 - 18:00</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <i class="icon-users" style="color: var(--color-spot-4); background-color: var(--color-spot-4-light);"></i>
+                    <div>
+                        <h3 style="color: var(--color-spot-4)">
+                            Voluntariado
+                        </h3>
+                        <p>¡Sumate a nuestro equipo de voluntarios!</p>
+                    </div>
+                </article>
+            </section>
+
             <!-- contenido principal -->
+
         </main>
 
         <footer>
