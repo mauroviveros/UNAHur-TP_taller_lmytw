@@ -131,6 +131,13 @@ section#programas {
 
         & .card {
             grid-column: span 2;
+            text-decoration: none;
+            color: inherit;
+
+            &:hover{
+                box-shadow: var(--shadow-ink-lg);
+                transform: translate(-3px, -3px);
+            }
 
             &:first-child {
                 grid-column: span 4;

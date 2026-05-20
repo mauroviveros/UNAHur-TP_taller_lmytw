@@ -1,0 +1,187 @@
+
+section#hero {
+    padding: 1.5rem;
+    min-height: calc(100vh - 5.5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+
+    & h1 {
+        text-align: center;
+    } 
+
+    & nav.shortcuts {
+        margin-top: 2.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+
+        & a.btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            & > div {
+
+                & > span {
+                    color: var(--color-muted);
+                    font-size: 0.75rem;
+                }
+                & > p {
+                    color: var(--color-ink);
+                    margin: 0;
+                }
+            }
+
+            & > span {
+                display: inline-flex;
+                height: 2.5rem;
+                width: 2.5rem;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid var(--color-ink);
+                margin-left: 0.75rem;
+                color: var(--color-ink);
+            }
+
+        }
+    }
+}
+
+/* estilos compartidos por los programas */
+section#arte, 
+section#aprender,
+section#familias {
+    & .banner {
+        border-bottom: 3px solid var(--color-ink);
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        top: 2rem;
+
+        & > hgroup {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            & > span {
+                font-family: "Archivo Black";
+                font-size: 2.5rem;
+                color: var(--color-ink);
+                text-transform: uppercase;
+            }
+
+            & > h4 {
+                font-weight: 500;
+                font-size: 0.75rem;
+                color: var(--color-ink);
+            }
+        }
+
+        & > p {
+            font-weight: 500;
+            font-size: 0.75rem;
+            color: var(--color-ink);
+        }
+    }
+
+    & > article {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+
+        & > .content {
+            grid-column: span 8;
+            padding: 3rem;
+            border-right: 3px solid var(--color-ink);
+
+            & > p {
+                font-family: "Fraunces";
+                font-size: 1.25rem;
+                margin-top: 1.5rem;
+                color: var(--color-ink);
+                max-width: 80%;
+            }
+
+            & > div {
+                margin-top: 2.5rem;
+
+                & > h5 {
+                    font-weight: 500;
+                    font-size: 0.75rem;
+                    color: var(--color-muted);
+                }
+
+                & > ol {
+                    margin: 1rem 0 0 0;
+                    padding: 0;
+                    border: 3px solid var(--color-ink);
+                    box-shadow: 6px 6px 0px 0px var(--color-ink);
+                    list-style: none;
+
+                    & > li {
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                        padding: 1rem;
+                        background-color: var(--color-paper);
+                        transition: background-color 0.2s ease-in-out;
+                        border-bottom: 2px solid var(--color-ink);
+
+                        &:hover {
+                            background-color: var(--color-paper-light);
+                        }
+
+                        & > span {
+                            font-family: "Archivo Black";
+                            font-size: 1.5rem;
+                        }
+
+                        & > p {
+                            font-family: "Fraunces";
+                            font-size: 1.125rem;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        & > .info {
+            grid-column: span 4;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            
+            & .card--programa-contact {
+                padding: 1.5rem;
+
+                & > span {
+                    font-size: 0.75rem;
+                }
+
+                & > p {
+                    font-family: "Fraunces";
+                    font-size: 1.125rem;
+                    margin: 1.25rem 0;
+                    font-weight: 500;
+                }
+
+                & > a {
+                    border: 2px solid var(--color-paper);
+                    box-shadow: 3px 3px 0px 0px var(--color-paper);
+
+                    &:hover {
+                        box-shadow: 6px 6px 0px 0px var(--color-paper);
+                    }
+                }
+            }
+        }
+    }
+}

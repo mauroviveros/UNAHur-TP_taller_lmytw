@@ -1,5 +1,6 @@
 :root{
     --color-paper: #FAF1DF;
+    --color-paper-light: #FDF8ED;
     --color-ink: #110904;
     --color-primary: #FF592C;
     --color-tertiary: #f3cb00;
@@ -10,10 +11,10 @@
     --color-spot-3: #F3CB00;
     --color-spot-4: #B24DC8;
 
-    --color-spot-1-light: #fab5a2;
-    --color-spot-2-light: #bfe0e0;
-    --color-spot-3-light: #eddf95;
-    --color-spot-4-light: #e992fc;
+    --color-spot-1-light: #FAB5A2;
+    --color-spot-2-light: #BFE0E0;
+    --color-spot-3-light: #EDDF95;
+    --color-spot-4-light: #E992FC;
 
 
     --border-ink: 3px solid var(--color-ink);
@@ -21,14 +22,14 @@
     --shadow-ink-lg: 6px 6px 0 0 var(--color-ink);
 }
 
-.bg-primary { background-color: var(--color-primary); }
-.bg-tertiary { background-color: var(--color-tertiary); }
-.bg-ink { background-color: var(--color-ink); }
-.bg-paper { background-color: var(--color-paper); }
-.bg-spot-1 { background-color: var(--color-spot-1); !important; }
-.bg-spot-2 { background-color: var(--color-spot-2); !important; }
-.bg-spot-3 { background-color: var(--color-spot-3); !important; }
-.bg-spot-4 { background-color: var(--color-spot-4); !important; }
+.bg-primary { background-color: var(--color-primary) !important; }
+.bg-tertiary { background-color: var(--color-tertiary) !important; }
+.bg-ink { background-color: var(--color-ink) !important; }
+.bg-paper { background-color: var(--color-paper) !important; }
+.bg-spot-1 { background-color: var(--color-spot-1) !important; }
+.bg-spot-2 { background-color: var(--color-spot-2) !important; }
+.bg-spot-3 { background-color: var(--color-spot-3) !important; }
+.bg-spot-4 { background-color: var(--color-spot-4) !important; }
 
 .text-primary { color: var(--color-primary); }
 .text-tertiary { color: var(--color-tertiary); }
