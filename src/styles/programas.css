@@ -63,7 +63,7 @@ section#familias {
         align-items: center;
         justify-content: space-between;
         position: sticky;
-        top: 2rem;
+        top: 2.5rem;
 
         & > hgroup {
             display: flex;
