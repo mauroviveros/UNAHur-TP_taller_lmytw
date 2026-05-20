@@ -3,6 +3,7 @@
     --color-ink: #110904;
     --color-primary: #FF592C;
     --color-tertiary: #f3cb00;
+    --color-muted: #50453d;
 
     --color-spot-1: #FF592C;
     --color-spot-2: #00D6D7;
@@ -37,3 +38,48 @@
 .text-spot-2 { color: var(--color-spot-2); }
 .text-spot-3 { color: var(--color-spot-3); }
 .text-spot-4 { color: var(--color-spot-4); }
+
+h1 {
+    font-family: 'Archivo Black';
+    font-size: 10rem;
+    line-height: 0.85;
+    text-transform: uppercase;
+    margin: 1.5rem 0 0 0;
+}
+
+h2 {
+    font-family: 'Archivo Black';
+    font-size: 6rem;
+    line-height: 0.9;
+    text-transform: uppercase;
+    margin: 0.5rem 0 0 0;
+}
+
+h3 {
+    font-family: 'Archivo Black';
+    font-size: 2rem;
+    line-height: 1.25;
+    text-transform: uppercase;
+    margin: 0.25rem 0 0 0;
+}
+
+h4 {
+    font-family: 'Archivo Black';
+    font-size: 1.5rem;
+    line-height: 1.25;
+    text-transform: uppercase;
+    margin: 0.25rem 0 0 0;
+}
+h5 {
+    font-family: 'Archivo Black';
+    font-size: 1rem;
+    line-height: 1.25;
+    text-transform: uppercase;
+    margin: 0.25rem 0 0 0;
+}
+
+.font-monospace {
+    font-family: monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
