@@ -56,6 +56,9 @@ section#hero {
 section#arte, 
 section#aprender,
 section#familias {
+    /* Evita que anchors sean tapados por header o elementos sticky */
+    scroll-margin-top: 2.5rem;
+
     & .banner {
         border-bottom: 3px solid var(--color-ink);
         padding: 1rem;
@@ -94,6 +97,7 @@ section#familias {
     & > article {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
+        min-height: calc(100vh - 7.5rem);
 
         & > .content {
             grid-column: span 8;
