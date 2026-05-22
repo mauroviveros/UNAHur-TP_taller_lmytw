@@ -1,0 +1,251 @@
+section#hero {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    min-height: calc(100vh - 20rem);
+
+    & article#hero-historia{
+        grid-column: 1 / span 7;
+        padding: 3rem;
+        border-right: 3px solid var(--color-ink);
+
+        & > div {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+
+            & > span {
+                font-size: 0.75rem;
+                color: var(--color-primary);
+            }
+
+            & > p {
+                font-family: Fraunces;
+                font-size: 2rem;
+                line-height: 1.5;
+                margin-top: 1rem;
+                font-weight: 400;
+            }
+
+            & > div {
+                margin-top: 2rem;
+                display: grid;
+                gap: 1.5rem;
+                grid-template-columns: repeat(2, 1fr);
+    
+                & > p {
+                    font-family: Fraunces;
+                    font-size: 1rem;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+
+    & article#hero-valores {
+        grid-column: 8 / span 5;
+        background-color: var(--color-spot-3);
+        padding: 3rem;
+
+        & > span {
+            font-size: 0.75rem;
+        }
+
+        & > ol {
+            height: 100%;
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            list-style: none;
+
+            & > li {
+                display: flex;
+                gap: .75rem;
+
+                & > span {
+                    font-size: 0.75rem;
+                    padding-top: 0.375rem;
+                }
+
+                & > p {
+                    font-family: "Archivo Black";
+                    text-transform: uppercase;
+                    font-size: 1.5rem;
+                    margin: 0;
+                    line-height: 1.2;
+                }
+            }
+        }
+    }
+}
+
+section#cronologia {
+    padding: 3rem;
+
+    & > ol {
+        display: grid;
+        gap: 0;
+        margin-top: 2.5rem;
+        grid-template-columns: repeat(5, 1fr);
+        border: 3px solid var(--color-ink);
+        box-shadow: 6px 6px 0px 0px var(--color-ink);
+        list-style: none;
+        padding: 0;
+
+        & > li {
+            /* p-6 border-b-[3px] md:border-b-0 md:border-r-[3px] border-ink */
+            padding: 1.5rem;
+            border-right: 3px solid var(--color-ink);
+
+            & > time {
+                /* font-display text-5xl */
+                font-family: "Archivo Black";
+                text-transform: uppercase;
+                font-size: 2.5rem;
+                color: var(--color-ink);
+            }
+
+            & > p {
+                /* font-serif text-sm mt-3 text-muted-foreground */
+                font-family: "Fraunces";
+                font-size: 0.75rem;
+                margin-top: 0.75rem;
+                color: var(--color-muted);
+            }
+        }
+    }
+}
+
+section#equipo {
+    padding: 4rem;
+    background-color: var(--color-background);
+
+    & .polaroid__grid {
+        margin-top: 2.5rem;
+        display: grid;
+        gap: 4rem;
+        padding: 3rem;
+        grid-template-columns: repeat(3, 1fr);
+
+        & > .polaroid {
+            border: 3px solid var(--color-ink);
+            box-shadow: 3px 3px 0 0 var(--color-ink);
+            background-color: var(--color-paper);
+            padding: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+
+            &:hover{
+                box-shadow: var(--shadow-ink-lg);
+                transform: translate(-3px, -3px);
+                transform: rotate(0deg) !important;
+                transform: scale(1.125) !important;
+                z-index: 10;
+
+                & .polaroid__name {
+                    color: var(--color-primary);
+                }
+            }
+            
+
+            &:nth-child(2n) {
+                transform: rotate(4deg);
+            }
+            &:nth-child(2n + 1) {
+                transform: rotate(-4deg);
+            }
+
+            & .polaroid__picture {
+                aspect-ratio: 1 / 1;
+                border: 2px solid var(--color-ink);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: "Archivo Black";
+                font-size: 4.5rem;
+                color: var(--color-ink);
+
+            }
+            & .polaroid__content {
+                padding-top: 1rem;
+                padding-left: 0.25rem;
+                padding-right: 0.25rem;
+            }
+            & .polaroid__name {
+                font-family: "Archivo Black";
+                text-transform: uppercase;
+                font-size: 1.25rem;
+                color: var(--color-ink);
+                margin: 0;
+            }
+            & .polaroid__role {
+                font-family: monospace;
+                font-size: 0.625rem;
+                text-transform: uppercase;
+                letter-spacing: 0.2em;
+                color: var(--color-muted);
+                margin: 0;
+                margin-top: 0.25rem;
+
+            }
+        }
+    }
+
+    & > img {
+        /* mt-12 block w-full border-[3px] border-ink shadow-brut aspect-[21/9] object-cover */
+        margin-top: 3rem;
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 21 / 9;
+        object-fit: cover;
+        border: 3px solid var(--color-ink);
+        box-shadow: 6px 6px 0 0 var(--color-ink);
+    }
+}
+
+section#ficha-tecnica{
+    padding: 3rem;
+
+    & > dl {
+        /* mt-8 border-[3px] border-ink shadow-brut divide-y-[2px] divide-ink */
+        margin-top: 2rem;
+        border: 3px solid var(--color-ink);
+        box-shadow: 6px 6px 0 0 var(--color-ink);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        font-family: monospace;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        background-color: var(--color-paper);
+    
+        & dt {
+            padding: 1rem;
+            border-right: 2px solid var(--color-ink);
+            background-color: var(--color-background);
+            letter-spacing: 0.2em;
+            display: block;
+        }
+
+        & dd {
+            grid-column: 2 / span 2;
+            padding: 1rem;
+            margin: 0;
+            display: block;
+        }
+
+        & dt, & dd {
+            border-bottom: 2px solid var(--color-ink);
+        }
+    }
+
+    & > blockquote {
+        text-align: right;
+        margin: 0;
+        margin-top: 1rem;
+        font-family: "Archivo Black";
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        color: var(--color-ink);
+    }
+}
