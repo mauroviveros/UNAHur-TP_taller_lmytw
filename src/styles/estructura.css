@@ -94,6 +94,7 @@ body > aside {
                 color: var(--color-ink);
                 text-decoration: none;
                 transition: all 0.2s ease-in-out;
+                word-break: normal;
 
                 &:hover {
                     border-color: var(--color-ink);
