@@ -7,6 +7,7 @@ body {
     margin: 0;
     background-color: var(--color-paper);
     display: flex;
+    word-break: break-word;
 }
 
 body > aside {
@@ -234,6 +235,11 @@ body > aside {
         box-shadow: var(--shadow-ink-lg);
     }
 
+    &.btn-ink {
+        color: var(--color-paper);
+        background-color: var(--color-ink);
+    }
+
     &.btn-primary {
         color: var(--color-paper);
         background-color: var(--color-primary);
@@ -250,7 +256,6 @@ body > aside {
 }
 
 .card {
-    
     display: flex;
     flex-direction: column;
     border: var(--border-ink);

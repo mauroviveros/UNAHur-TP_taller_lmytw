@@ -93,12 +93,10 @@ section#cronologia {
         padding: 0;
 
         & > li {
-            /* p-6 border-b-[3px] md:border-b-0 md:border-r-[3px] border-ink */
             padding: 1.5rem;
             border-right: 3px solid var(--color-ink);
 
             & > time {
-                /* font-display text-5xl */
                 font-family: "Archivo Black";
                 text-transform: uppercase;
                 font-size: 2.5rem;
@@ -106,7 +104,6 @@ section#cronologia {
             }
 
             & > p {
-                /* font-serif text-sm mt-3 text-muted-foreground */
                 font-family: "Fraunces";
                 font-size: 0.75rem;
                 margin-top: 0.75rem;
@@ -192,7 +189,6 @@ section#equipo {
     }
 
     & > img {
-        /* mt-12 block w-full border-[3px] border-ink shadow-brut aspect-[21/9] object-cover */
         margin-top: 3rem;
         display: block;
         width: 100%;
@@ -208,7 +204,6 @@ section#ficha-tecnica{
     padding: 3rem;
 
     & > dl {
-        /* mt-8 border-[3px] border-ink shadow-brut divide-y-[2px] divide-ink */
         margin-top: 2rem;
         border: 3px solid var(--color-ink);
         box-shadow: 6px 6px 0 0 var(--color-ink);
@@ -247,5 +242,6 @@ section#ficha-tecnica{
         text-transform: uppercase;
         font-size: 0.75rem;
         color: var(--color-ink);
+        text-wrap: balance;
     }
 }

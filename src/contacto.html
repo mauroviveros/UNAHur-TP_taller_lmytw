@@ -107,79 +107,85 @@
         </header>
 
         <main>
+            <section id="hero">
+                <h1>Hablemos. <br> <span class="text-primary">En serio.</span></h1>
+                <p>Si querés ser voluntaria/o, donar o sumar tu organización a la red, escribinos. Te respondemos en 48 horas hábiles.</p>
+            </section>
 
-            <section id="formulario">
-                <h2>¡Ponete en contacto con nosotros!</h2>
-                <form action="">
+            <section id="contacto">
+                <article class="contact__grid">
+                    <a href="mailto:contacto@convidar.org" class="contact contact__anchor bg-spot-1">
+                        <i class="icon-mail"></i>
+                        <span class="contact__label font-monospace">Email</span>
+                        <p class="contact__value">contacto@convidar.org</p>
+                        <span class="contact__action font-monospace">
+                            Escribir
+                            <i class="icon-arrow-up-right"></i>
+                        </span>
+                    </a>
+
+                    <a href="tel:+541112345678" class="contact contact__anchor bg-spot-2">
+                        <i class="icon-phone"></i>
+                        <span class="contact__label font-monospace">Teléfono</span>
+                        <p class="contact__value">+54 11 1234 5678</p>
+                        <span class="contact__action font-monospace">
+                            Llamar
+                            <i class="icon-arrow-up-right"></i>
+                        </span>
+                    </a>
+
+                    <div class="contact bg-spot-3">
+                        <i class="icon-map-pin"></i>
+                        <span class="contact__label font-monospace">Dirección</span>
+                        <p class="contact__value">Av. Siempre Viva 1234, CABA, Argentina</p>
+                    </div>
+
+                    <contact class="contact bg-spot-4">
+                        <i class="icon-clock"></i>
+                        <span class="contact__label font-monospace">Horario de atención</span>
+                        <ul class="contact__value">
+                            <li>Lun a Vie · 9 a 18 h</li>
+                            <li>Sáb · 10 a 13 h</li>
+                            <li>Dom · cerrado</li>
+                        </ul>
+                    </contact>
+                </article>
+
+                <form action="" method="GET">
+                    <span class="font-monospace">Formulario</span>
+                    <h5>Mandanos un mensaje</h5>
+
                     <fieldset>
-                        <label for="nombre">Nombre y Apellido</label>
-                        <input id="nombre" type="text" placeholder="Tu nombre y apellido" required>
+                        <label for="nombre" class="font-monospace">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
                     </fieldset>
 
                     <fieldset>
-                        <label for="email">Email</label>
-                        <input id="email" type="email" placeholder="tu@email.com" required>
+                        <label for="email" class="font-monospace">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Tu email" required>
                     </fieldset>
 
                     <fieldset>
-                        <label for="asunto">Asunto</label>
-                        <input id="asunto" type="text" placeholder="El asunto de tu mensaje" required>
+                        <label for="asunto" class="font-monospace">Programa</label>
+                        <select id="programa" name="programa" required>
+                            <option value="" selected disabled>Selecciona un programa</option>
+                            <option value="arte">Arte que Convida</option>
+                            <option value="aprender">Aprender Juntos</option>
+                            <option value="familia">Familias en Red</option>
+                            <option value="otros">Otros</option>
+                        </select>
                     </fieldset>
 
                     <fieldset>
-                        <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" placeholder="Contanos en que podemos ayudarte" rows="10" required></textarea>
+                        <label for="mensaje" class="font-monospace">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
                     </fieldset>
+
+                    <button type="submit" class="btn btn-ink">Enviar mensaje</button>
+                    <p class="note font-monospace">*Este formulario es solo ilustrativo. No envía mensajes realmente.</p>
                 </form>
             </section>
-
-            <section id="redes-sociales">
-                <article class="card">
-                    <i class="icon-phone" style="color: var(--color-spot-1); background-color: var(--color-spot-1-light);"></i>
-
-                    <div>
-                        <h3 style="color: var(--color-spot-1)">
-                            Teléfono
-                        </h3>
-
-                        <p>+54 11 1234-5678</p>
-                        <p>0800 123 4567</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <i class="icon-mail" style="color: var(--color-spot-2); background-color: var(--color-spot-2-light);"></i>
-                    <div>
-                        <h3 style="color: var(--color-spot-2)">
-                            Email
-                        </h3>
-                        <p>info@convidar.com</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <i class="icon-clock" style="color: var(--color-spot-3); background-color: var(--color-spot-3-light);"></i>
-                    <div>
-                        <h3 style="color: var(--color-spot-3)">
-                            Horarios de atención
-                        </h3>
-                        <p>Lunes a viernes: 9:00 - 18:00</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <i class="icon-users" style="color: var(--color-spot-4); background-color: var(--color-spot-4-light);"></i>
-                    <div>
-                        <h3 style="color: var(--color-spot-4)">
-                            Voluntariado
-                        </h3>
-                        <p>¡Sumate a nuestro equipo de voluntarios!</p>
-                    </div>
-                </article>
-            </section>
-
-            <!-- contenido principal -->
-
+                
         </main>
 
         <footer>
