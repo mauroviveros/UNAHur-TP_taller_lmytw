@@ -57,6 +57,8 @@ section#hero {
             flex-direction: column;
             gap: 0.75rem;
             list-style: none;
+            padding: 0;
+            padding-left: 0.75rem;
 
             & > li {
                 display: flex;
@@ -65,6 +67,7 @@ section#hero {
                 & > span {
                     font-size: 0.75rem;
                     padding-top: 0.375rem;
+                    word-break: normal;
                 }
 
                 & > p {
