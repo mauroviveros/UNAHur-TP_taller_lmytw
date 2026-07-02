@@ -5,6 +5,11 @@ function toggleTheme() {
     const newTheme = isDark ? 'light' : 'dark';
 
     html.setAttribute('data-theme', newTheme);
+    if (newTheme === 'dark') {
+        html.setAttribute('data-bs-theme', 'dark');
+    } else {
+        html.removeAttribute('data-bs-theme');
+    }
     localStorage.setItem('theme', newTheme);
 
     const toggleBtn = document.getElementById('theme-toggle');

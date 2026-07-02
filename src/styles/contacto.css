@@ -13,11 +13,8 @@ section#hero {
 }
 
 section#contacto {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
 
     & > .contact__grid{
-        grid-column: span 7;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         border-right: 3px solid var(--color-ink);
@@ -74,7 +71,6 @@ section#contacto {
     }
 
     & > form {
-        grid-column: span 5;
         padding: 2.5rem;
         background-color: var(--color-background);
 
@@ -123,10 +119,8 @@ section#contacto {
     }
 
     section#contacto {
-        grid-template-columns: 1fr;
 
         & > .contact__grid {
-            grid-column: span 1;
             border-right: none;
             grid-template-columns: repeat(2, 1fr);
 
@@ -149,7 +143,6 @@ section#contacto {
         }
 
         & > form {
-            grid-column: span 1;
             padding: 1.5rem 1rem;
 
             & > h5 {
