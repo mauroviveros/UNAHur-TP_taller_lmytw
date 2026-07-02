@@ -241,7 +241,7 @@ section#contacto {
                     display: flex;
                     margin-bottom: 0.5rem;
                     gap: 0.25rem;
-                    & span { font-size: 0.75rem; }
+                    & span { font-size: 0.75rem; flex-shrink: 0; }
                     & p {
                         margin: 0;
                         color: var(--color-muted);
@@ -254,5 +254,133 @@ section#contacto {
         & ul li span {
             font-size: 1rem;
         }
+    }
+}
+
+@media (max-width: 800px) {
+    .main-content > header {
+        padding: 0.75rem 1rem;
+    }
+
+    section#hero {
+        & > article {
+            padding: 1.5rem 1rem 1rem 1rem;
+
+            & > div {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+                margin-top: 1rem;
+
+                & > p {
+                    grid-column: span 1;
+                    font-size: 1.125rem;
+                }
+
+                & > div {
+                    grid-column: span 1;
+
+                    & .btn {
+                        width: 100%;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+
+        & > figure > figcaption {
+            max-width: 50%;
+            font-size: 0.625rem;
+            padding: 0.5rem 0.75rem;
+        }
+
+        & > blockquote {
+            grid-template-columns: repeat(2, 1fr);
+
+            & > article {
+                padding: 1.25rem 1rem;
+
+                &:nth-child(2n) {
+                    border-right: none;
+                }
+
+                & > h4 {
+                    font-size: 2.25rem;
+                }
+
+                & > p {
+                    font-size: 0.625rem;
+                }
+            }
+        }
+    }
+
+    section#programas {
+        padding: 1.5rem 1rem;
+
+        & > header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        & .card-container {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+
+            & .card {
+                grid-column: span 1;
+
+                &:first-child {
+                    grid-column: span 1;
+                    grid-row: span 1;
+
+                    & .card-body {
+                        padding: 1.25rem;
+
+                        & > .card-title {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    section#motivacion {
+        padding: 2rem 1rem;
+
+        & > blockquote {
+            font-size: 1.5rem;
+        }
+
+        & > footer {
+            margin-top: 1rem;
+        }
+    }
+
+    section#contacto {
+        padding: 1.5rem 1rem;
+
+        & > div {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        & .card.card--contact {
+            grid-column: span 1;
+            padding: 2rem 1.25rem;
+
+            & > h2 {
+                font-size: 2.25rem;
+            }
+        }
+
+        & .card.card--proximo-evento {
+            transform: none;
+        }
+    }
+
+    .main-content > footer {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }

@@ -248,3 +248,117 @@ section#ficha-tecnica{
         text-wrap: balance;
     }
 }
+
+@media (max-width: 800px) {
+    section#hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+
+        & article#hero-historia {
+            grid-column: span 1;
+            padding: 1.5rem 1rem;
+            border-right: none;
+
+            & > div {
+                & > p {
+                    font-size: 1.25rem;
+                }
+
+                & > div {
+                    grid-template-columns: 1fr;
+                    gap: 1rem;
+                }
+            }
+        }
+
+        & article#hero-valores {
+            grid-column: span 1;
+            padding: 1.5rem 1rem;
+
+            & > ol > li > p {
+                font-size: 1.25rem;
+            }
+        }
+    }
+
+    section#cronologia {
+        padding: 1.5rem 1rem;
+
+        & > ol {
+            grid-template-columns: repeat(2, 1fr);
+            box-shadow: 3px 3px 0 0 var(--color-ink);
+            margin-top: 1.5rem;
+
+            & > li {
+                padding: 1rem;
+                border-bottom: 2px solid var(--color-ink);
+
+                &:nth-child(2n) {
+                    border-right: none;
+                }
+
+                & > time {
+                    font-size: 1.75rem;
+                }
+
+                & > p {
+                    font-size: 0.625rem;
+                }
+            }
+        }
+    }
+
+    section#equipo {
+        padding: 2rem 1rem;
+
+        & .polaroid__grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            padding: 1rem;
+            margin-top: 1.5rem;
+
+            & > .polaroid {
+                &:nth-child(2n),
+                &:nth-child(2n+1) {
+                    transform: none;
+                }
+
+                &:hover {
+                    transform: scale(1.05) !important;
+                }
+
+                & .polaroid__picture {
+                    font-size: 3rem;
+                }
+
+                & .polaroid__name {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        & > img {
+            margin-top: 1.5rem;
+            box-shadow: 3px 3px 0 0 var(--color-ink);
+        }
+    }
+
+    section#ficha-tecnica {
+        padding: 1.5rem 1rem;
+
+        & > dl {
+            grid-template-columns: 1fr;
+            box-shadow: 3px 3px 0 0 var(--color-ink);
+            margin-top: 1.5rem;
+
+            & dt {
+                border-right: none;
+                border-bottom: 2px solid var(--color-ink);
+            }
+
+            & dd {
+                grid-column: span 1;
+            }
+        }
+    }
+}

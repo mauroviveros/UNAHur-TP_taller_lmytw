@@ -66,6 +66,7 @@
 .text-spot-4 { color: var(--color-spot-4); }
 
 h1 {
+    word-break: normal;
     font-family: 'Archivo Black';
     font-size: 10rem;
     line-height: 0.85;
@@ -108,4 +109,10 @@ h5 {
     font-family: monospace;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+}
+
+@media (max-width: 800px) {
+    h1 { font-size: 3rem; }
+    h2 { font-size: 2.25rem; }
+    h4 { font-size: 1.25rem; }
 }

@@ -101,11 +101,60 @@ section#contacto {
             font-size: 0.625rem;
             letter-spacing: 0.2em;
             color: var(--color-muted);
+            margin-top: 0.5rem;
         }
 
         & > .btn {
             width: 100%;
             justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    section#hero {
+        padding: 2rem 1rem;
+
+        & > p {
+            max-width: 100%;
+            font-size: 1.125rem;
+            margin: 1.5rem 0;
+        }
+    }
+
+    section#contacto {
+        grid-template-columns: 1fr;
+
+        & > .contact__grid {
+            grid-column: span 1;
+            border-right: none;
+            grid-template-columns: repeat(2, 1fr);
+
+            & .contact {
+                padding: 1.25rem 1rem;
+
+                & > i {
+                    font-size: 1.5rem;
+                }
+
+                & > .contact__label {
+                    margin-top: 1rem;
+                    font-size: 0.625rem;
+                }
+
+                & > .contact__value {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        & > form {
+            grid-column: span 1;
+            padding: 1.5rem 1rem;
+
+            & > h5 {
+                font-size: 1.5rem;
+            }
         }
     }
 }

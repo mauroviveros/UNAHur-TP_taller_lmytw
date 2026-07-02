@@ -245,7 +245,7 @@ textarea.form-control {
 }
 
 /* --- Sidebar: offcanvas en mobile, sticky panel en desktop --- */
-@media (min-width: 992px) {
+@media (min-width: 801px) {
   #sidebar {
     visibility: visible !important;
     position: sticky !important;
@@ -254,6 +254,13 @@ textarea.form-control {
     width: 18rem !important;
     transform: none !important;
     z-index: auto !important;
+  }
+}
+
+/* --- Hamburger: alinear visibilidad con breakpoint 800px --- */
+@media (min-width: 801px) {
+  .main-content > header > .theme-toggle[data-bs-toggle="offcanvas"] {
+    display: none !important;
   }
 }
 
