@@ -1,10 +1,12 @@
 function preselectProgramaFromURL() {
     const params = new URLSearchParams(window.location.search);
     const select = document.querySelector('select[name="programa"]');
+    if (!select) return;
+
     const programa = params.get('programa');
     if (!programa) return;
 
-    const programasHabilitadosPreseleccion = ['arte', 'aprender', 'familia'];
+    const programasHabilitadosPreseleccion = ['arte', 'aprender', 'familias'];
     const programaDefault = 'otros';
 
     if (programasHabilitadosPreseleccion.includes(programa)) {
@@ -13,7 +15,6 @@ function preselectProgramaFromURL() {
         select.value = programaDefault;
     }
 
-    // scrollear suavemente al select preseleccionado para mejorar la experiencia de usuario
     select.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
