@@ -31,8 +31,9 @@ if (document.readyState === 'loading') {
 
 function updateTime() {
     const timeElement = document.getElementById("time-now");
+    if (!timeElement) return;
+
     const now = new Date();
-    
     timeElement.textContent = now.toLocaleDateString('es-AR', {
         weekday: 'long',
         year: 'numeric',

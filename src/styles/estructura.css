@@ -304,12 +304,12 @@ body > aside {
         display: block;
     }
 
-    & .card__content {
+    & .card-body {
         padding: 1.25rem;
         border-top: var(--border-ink);
         flex-grow: 1;
 
-        & > p {
+        & > .card-text {
             font-family: "Fraunces";
             font-size: 1.125rem;
             margin: 0.75rem 0 0 0;

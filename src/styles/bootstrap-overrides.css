@@ -1,0 +1,273 @@
+/* ===========================================
+   Bootstrap Overrides — Neo-Brutalist ConvidAR
+   Solo componentes usados en la pagina
+   =========================================== */
+
+/* --- CSS Custom Properties globales --- */
+:root {
+  --bs-body-bg: #ECE4D2;
+  --bs-body-bg-rgb: 236, 228, 210;
+  --bs-body-color: #110904;
+  --bs-body-color-rgb: 17, 9, 4;
+  --bs-emphasis-color: #110904;
+  --bs-emphasis-color-rgb: 17, 9, 4;
+  --bs-secondary-color: #50453d;
+  --bs-secondary-color-rgb: 80, 69, 61;
+  --bs-secondary-bg: #FAF1DF;
+  --bs-secondary-bg-rgb: 250, 241, 223;
+  --bs-tertiary-color: #50453d;
+  --bs-tertiary-color-rgb: 80, 69, 61;
+  --bs-tertiary-bg: #FDF8ED;
+  --bs-tertiary-bg-rgb: 253, 248, 237;
+
+  --bs-primary: #FF592C;
+  --bs-primary-rgb: 255, 89, 44;
+  --bs-secondary: #110904;
+  --bs-secondary-rgb: 17, 9, 4;
+  --bs-success: #00D6D7;
+  --bs-success-rgb: 0, 214, 215;
+  --bs-warning: #F3CB00;
+  --bs-warning-rgb: 243, 203, 0;
+  --bs-info: #00D6D7;
+  --bs-info-rgb: 0, 214, 215;
+  --bs-danger: #FF592C;
+  --bs-danger-rgb: 255, 89, 44;
+  --bs-light: #FAF1DF;
+  --bs-light-rgb: 250, 241, 223;
+  --bs-dark: #110904;
+  --bs-dark-rgb: 17, 9, 4;
+
+  --bs-link-color: #FF592C;
+  --bs-link-color-rgb: 255, 89, 44;
+  --bs-link-hover-color: #110904;
+  --bs-link-hover-color-rgb: 17, 9, 4;
+  --bs-link-decoration: underline;
+
+  --bs-body-font-family: "Fraunces", Georgia, serif;
+  --bs-body-font-size: 1.125rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.6;
+  --bs-heading-color: #110904;
+  --bs-heading-font-family: "Archivo Black", sans-serif;
+
+  --bs-border-width: 3px;
+  --bs-border-style: solid;
+  --bs-border-color: #110904;
+  --bs-border-color-translucent: rgba(17, 9, 4, 0.175);
+  --bs-border-radius: 0;
+  --bs-border-radius-sm: 0;
+  --bs-border-radius-lg: 0;
+  --bs-border-radius-xl: 0;
+  --bs-border-radius-xxl: 0;
+  --bs-border-radius-pill: 0;
+  --bs-border-radius-2xl: 0;
+
+  --bs-box-shadow: 3px 3px 0 0 #110904;
+  --bs-box-shadow-sm: 2px 2px 0 0 #110904;
+  --bs-box-shadow-lg: 6px 6px 0 0 #110904;
+  --bs-box-shadow-inset: inset 2px 2px 0 0 rgba(17, 9, 4, 0.2);
+
+  --bs-focus-ring-width: 0.25rem;
+  --bs-focus-ring-opacity: 1;
+  --bs-focus-ring-color: rgba(255, 89, 44, 0.5);
+
+  --bs-code-color: #B24DC8;
+  --bs-highlight-color: #110904;
+  --bs-highlight-bg: #F3CB00;
+}
+
+[data-theme="dark"] {
+  --bs-body-bg: #1a1512;
+  --bs-body-bg-rgb: 26, 21, 18;
+  --bs-body-color: #ede8e0;
+  --bs-body-color-rgb: 237, 232, 224;
+  --bs-emphasis-color: #ede8e0;
+  --bs-emphasis-color-rgb: 237, 232, 224;
+  --bs-secondary-color: #b5a9a0;
+  --bs-secondary-color-rgb: 181, 169, 160;
+  --bs-secondary-bg: #2a2420;
+  --bs-secondary-bg-rgb: 42, 36, 32;
+  --bs-tertiary-color: #b5a9a0;
+  --bs-tertiary-color-rgb: 181, 169, 160;
+  --bs-tertiary-bg: #342e29;
+  --bs-tertiary-bg-rgb: 52, 46, 41;
+
+  --bs-primary: #FF6B42;
+  --bs-primary-rgb: 255, 107, 66;
+  --bs-secondary: #ede8e0;
+  --bs-secondary-rgb: 237, 232, 224;
+  --bs-success: #1ADFE0;
+  --bs-success-rgb: 26, 223, 224;
+  --bs-warning: #f5d730;
+  --bs-warning-rgb: 245, 215, 48;
+  --bs-info: #1ADFE0;
+  --bs-info-rgb: 26, 223, 224;
+  --bs-danger: #FF6B42;
+  --bs-danger-rgb: 255, 107, 66;
+  --bs-light: #2a2420;
+  --bs-light-rgb: 42, 36, 32;
+  --bs-dark: #ede8e0;
+  --bs-dark-rgb: 237, 232, 224;
+
+  --bs-link-color: #FF6B42;
+  --bs-link-color-rgb: 255, 107, 66;
+  --bs-link-hover-color: #f5d730;
+  --bs-link-hover-color-rgb: 245, 215, 48;
+
+  --bs-heading-color: #ede8e0;
+  --bs-border-color: #ede8e0;
+  --bs-border-color-translucent: rgba(237, 232, 224, 0.175);
+
+  --bs-box-shadow: 3px 3px 0 0 #ede8e0;
+  --bs-box-shadow-sm: 2px 2px 0 0 #ede8e0;
+  --bs-box-shadow-lg: 6px 6px 0 0 #ede8e0;
+  --bs-box-shadow-inset: inset 2px 2px 0 0 rgba(237, 232, 224, 0.2);
+  --bs-focus-ring-color: rgba(255, 107, 66, 0.5);
+
+  --bs-code-color: #C56FD6;
+  --bs-highlight-color: #ede8e0;
+  --bs-highlight-bg: #332b10;
+}
+
+/* ===========================================
+   Componentes usados en la pagina
+   =========================================== */
+
+/* --- Buttons --- */
+.btn {
+  --bs-btn-border-width: 3px;
+  --bs-btn-border-radius: 0;
+  --bs-btn-padding-x: 1.25rem;
+  --bs-btn-padding-y: 0.75rem;
+  --bs-btn-font-family: "Archivo Black", sans-serif;
+  --bs-btn-font-size: 1rem;
+  --bs-btn-font-weight: 700;
+  text-transform: uppercase;
+  box-shadow: 3px 3px 0 0 var(--color-ink);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 6px 6px 0 0 var(--color-ink);
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--color-primary);
+  --bs-btn-border-color: var(--color-ink);
+  --bs-btn-color: var(--color-paper);
+  --bs-btn-hover-bg: var(--color-primary);
+  --bs-btn-hover-border-color: var(--color-ink);
+  --bs-btn-hover-color: var(--color-paper);
+  --bs-btn-active-bg: var(--color-primary);
+  --bs-btn-active-border-color: var(--color-ink);
+}
+
+/* --- Cards --- */
+.card {
+  --bs-card-border-width: 3px;
+  --bs-card-border-color: var(--color-ink);
+  --bs-card-border-radius: 0;
+  --bs-card-bg: var(--color-paper);
+  --bs-card-box-shadow: var(--shadow-ink);
+  --bs-card-spacer-y: 1.25rem;
+  --bs-card-spacer-x: 1.25rem;
+  --bs-card-cap-bg: transparent;
+}
+
+.card-img-top {
+  border-radius: 0;
+}
+
+/* --- Badges --- */
+.badge {
+  --bs-badge-border-radius: 0;
+  --bs-badge-padding-x: 0.5em;
+  --bs-badge-padding-y: 0.25em;
+  font-family: monospace;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  border: 2px solid var(--color-ink);
+  box-shadow: 2px 2px 0 0 var(--color-ink);
+}
+
+/* --- Form controls (contacto.html) --- */
+.form-control {
+  --bs-border-radius: 0;
+  border-width: 3px;
+  border-color: var(--color-ink);
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: "Fraunces", Georgia, serif;
+}
+
+.form-control:focus {
+  border-color: var(--color-primary);
+  box-shadow: 3px 3px 0 0 var(--color-primary);
+}
+
+.form-select {
+  --bs-border-radius: 0;
+  border-width: 3px;
+  border-color: var(--color-ink);
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+}
+
+.form-select:focus {
+  border-color: var(--color-primary);
+  box-shadow: 3px 3px 0 0 var(--color-primary);
+}
+
+.form-label {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: var(--color-ink);
+}
+
+textarea.form-control {
+  min-height: 120px;
+}
+
+/* --- Offcanvas (sidebar mobile) --- */
+.offcanvas {
+  --bs-offcanvas-bg: var(--color-paper);
+  --bs-offcanvas-border-color: var(--color-ink);
+  --bs-offcanvas-border-width: 3px;
+  --bs-offcanvas-width: 18rem;
+}
+
+.btn-close {
+  --bs-btn-close-opacity: 1;
+  --bs-btn-close-hover-opacity: 1;
+}
+
+/* --- Sidebar: offcanvas en mobile, sticky panel en desktop --- */
+@media (min-width: 992px) {
+  #sidebar {
+    visibility: visible !important;
+    position: sticky !important;
+    top: 0 !important;
+    height: 100vh !important;
+    width: 18rem !important;
+    transform: none !important;
+    z-index: auto !important;
+  }
+}
+
+/* --- Brand logo (sidebar) --- */
+.brand-logo {
+  display: inline-flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  color: var(--color-paper);
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.25rem;
+  border: 2px solid var(--color-ink);
+  box-shadow: var(--shadow-ink);
+}

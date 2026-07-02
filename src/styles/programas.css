@@ -67,6 +67,7 @@ section#familias {
         justify-content: space-between;
         position: sticky;
         top: 3.5rem;
+        z-index: 10;
 
         & > hgroup {
             display: flex;

@@ -143,10 +143,10 @@ section#programas {
                 grid-column: span 4;
                 grid-row: span 2;
 
-                & .card__content {
+                & .card-body {
                     padding: 2rem;
 
-                    & > h3 {
+                    & > .card-title {
                         font-size: 3rem;
                     }
                 }
