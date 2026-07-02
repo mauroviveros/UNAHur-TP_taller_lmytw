@@ -16,6 +16,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     <!-- Bootstrap overrides — neo-brutalist tokens -->
     <link rel="stylesheet" href="./styles/bootstrap-overrides.css">
 
@@ -119,7 +122,7 @@
 
         <main>
             <section id="hero">
-                <article id="hero-historia">
+                <article id="hero-historia" class="animate__animated animate__fadeInLeftBig">
                     <span class="font-monospace">Historia</span>
 
                     <div>
@@ -132,7 +135,7 @@
                     </div>
 
                 </article>
-                <article id="hero-valores">
+                <article id="hero-valores" class="animate__animated animate__fadeInRightBig">
                     <span class="font-monospace">Valores</span>
 
                     <ol>
@@ -163,24 +166,24 @@
                 </header>
 
                 <ol class="timeline">
-                    <li>
+                    <li data-animate="slideInUp">
                         <time>2016</time>
                         <p>Nace convidAR en un comedor barrial de Hurlingham.</p>
                     </li>
 
-                    <li class="bg-spot-2">
+                    <li class="bg-spot-2" data-animate="slideInUp" data-animate-delay="200ms">
                         <time>2019</time>
                         <p>Se inauguran los primeros 3 centros comunitarios propios.</p>
                     </li>
-                    <li>
+                    <li data-animate="slideInUp" data-animate-delay="300ms">
                         <time>2020</time>
                         <p>Lanzamos Aprender Juntos junto a 12 escuelas.</p>
                     </li>
-                    <li>
+                    <li data-animate="slideInUp" data-animate-delay="500ms">
                         <time>2021</time>
                         <p>Articulamos respuesta de emergencia durante la pandemia.</p>
                     </li>
-                    <li>
+                    <li data-animate="slideInUp" data-animate-delay="600ms">
                         <time>2026</time>
                         <p>Llegamos a 14 centros y 3.200 familias acompañadas.</p>
                     </li>
@@ -197,6 +200,7 @@
                 <article class="polaroid__grid">
                     <a
                         class="polaroid"
+                        data-animate="rollIn"
                         href="https://campus2026.unahur.edu.ar/user/view.php?id=69422"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -210,6 +214,7 @@
 
                     <a
                         class="polaroid"
+                        data-animate="rollIn" data-animate-delay="200ms"
                         href="https://campus2026.unahur.edu.ar/user/view.php?id=62075"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -223,6 +228,7 @@
 
                     <a
                         class="polaroid"
+                        data-animate="rollIn" data-animate-delay="300ms"
                         href="https://campus2026.unahur.edu.ar/user/view.php?id=26253"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -236,6 +242,7 @@
 
                     <a
                         class="polaroid"
+                        data-animate="rollIn" data-animate-delay="500ms"
                         href="https://www.kodal.pet/m/samira"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -249,6 +256,7 @@
 
                     <a
                         class="polaroid"
+                        data-animate="rollIn" data-animate-delay="600ms"
                         href="javascript:alert('El profesor no autoriza que se conozca su identidad, pero les manda un saludo a todas las personas que visiten esta página')"
                     >
                         <span class="polaroid__picture bg-spot-1">GH</span>
@@ -260,6 +268,7 @@
 
                     <a
                         class="polaroid"
+                        data-animate="rollIn" data-animate-delay="800ms"
                         href="https://es.wikipedia.org/wiki/Ren%C3%A9_Favaloro"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -278,11 +287,12 @@
                     width="1400"
                     height="896"
                     loading="lazy"
+                    data-animate="zoomIn"
                 />
 
             </section>
 
-            <section id="ficha-tecnica">
+            <section id="ficha-tecnica" data-animate="slideInUp">
                 <header>
                     <p class="section-label">Ficha técnica</p>
                     <h3>Datos institucionales</h3>
@@ -323,6 +333,7 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <script src="./scripts/animations.js"></script>
     <script src="./scripts/index.js"></script>
 </body>
 </html>

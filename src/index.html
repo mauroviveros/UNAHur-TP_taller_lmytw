@@ -17,6 +17,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     <!-- Bootstrap overrides — neo-brutalist tokens -->
     <link rel="stylesheet" href="./styles/bootstrap-overrides.css">
 
@@ -121,17 +124,17 @@
         <main>
             <section id="hero">
                 <article>
-                    <h1>
+                    <h1 class="animate__animated animate__slideInDown">
                         Somos <br>
                         <span class="text-primary">colectivo.</span> <br>
                         Somos <br>
                         inclusión. <br>
                     </h1>
                     <div>
-                        <p>Trabajamos desde <strong>2016</strong> con el sueño de crear espacios de participación. y protección de derechos
+                        <p class="animate__animated animate__fadeInUpBig animate__delay-150ms">Trabajamos desde <strong>2016</strong> con el sueño de crear espacios de participación. y protección de derechos
                             de niñas, niños, adolescentes, jovenes y familias en situación de vulnerabilidad.</p>
     
-                        <div>
+                        <div class="animate__animated animate__fadeInUpBig animate__delay-300ms">
                             <a href="#programas" class="btn btn-primary">
                                 Ver programas
                                 <i class="icon-arrow-up-right"></i>
@@ -144,7 +147,7 @@
                     </div>
                 </article>
 
-                <figure>
+                <figure class="animate__animated animate__zoomInUp animate__delay-300ms">
                     <!-- imagen de algun centro comunitario que tenga convidAR-->
                     <img src="assets/images/hero.jpg" alt="Centro comunitario de convidAR" width="1600" height="1024" />
 
@@ -154,22 +157,22 @@
                 </figure>
 
                 <blockquote>
-                    <article class="bg-spot-1">
+                    <article class="bg-spot-1 animate__animated animate__bounceInUp animate__delay-150ms">
                         <h4>10</h4>
                         <p>años en territorio</p>
                     </article>
 
-                    <article class="bg-spot-2">
+                    <article class="bg-spot-2 animate__animated animate__bounceInUp animate__delay-300ms">
                         <h4>14</h4>
                         <p>centros comunitarios</p>
                     </article>
 
-                    <article class="bg-spot-3">
+                    <article class="bg-spot-3 animate__animated animate__bounceInUp animate__delay-500ms">
                         <h4>3.200</h4>
                         <p>familias acompañadas</p>
                     </article>
 
-                    <article class="bg-spot-4">
+                    <article class="bg-spot-4 animate__animated animate__bounceInUp animate__delay-600ms">
                         <h4>180</h4>
                         <p>voluntarios activos</p>
                     </article>
@@ -177,7 +180,7 @@
             </section>
 
             <section id="programas">
-                <header>
+                <header data-animate="slideInDown">
                     <div>
                         <p class="section-label">seccion 02 / programas</p>
                         <h2>Lo que hacemos</h2>
@@ -185,7 +188,7 @@
                     <a href="./programas.html">Ver todos →</a>
                 </header>
                 <div class="card-container">
-                    <a href="./programas.html#arte" class="card">
+                    <a href="./programas.html#arte" class="card" data-animate="flipInX">
                         <img src="assets/images/programas/spot-1.jpg" alt="Niñas y niños pintando en un taller de arte" width="1024" height="768" class="card-img-top" />
                         <div class="card-body bg-spot-2">
                             <h3 class="card-title">Arte que convida</h3>
@@ -195,7 +198,7 @@
                         </div>
                     </a>
 
-                    <a href="./programas.html#aprender" class="card">
+                    <a href="./programas.html#aprender" class="card" data-animate="flipInX" data-animate-delay="200ms">
                         <img src="assets/images/programas/spot-2.jpg" alt="Mentora acompañando a un adolescente con una notebook" width="1024" height="768" class="card-img-top" />
                         <div class="card-body bg-spot-3">
                             <h3 class="card-title">Aprender juntos</h3>
@@ -203,7 +206,7 @@
                         </div>
                     </a>
 
-                    <a href="./programas.html#familias" class="card">
+                    <a href="./programas.html#familias" class="card" data-animate="flipInX" data-animate-delay="300ms">
                         <img src="assets/images/programas/spot-3.jpg" alt="Voluntarios entregando bolsones a familias" width="1024" height="768" class="card-img-top" />
                         <div class="card-body bg-spot-4">
                             <h3 class="card-title">Familias en red</h3>
@@ -213,7 +216,7 @@
                 </div>
             </section>
 
-            <section id="motivacion">
+            <section id="motivacion" data-animate="jackInTheBox">
                 <i class="icon-quote text-primary" style="font-size: 3rem;"></i>
                 <blockquote>
                     "Cuando un barrio se organiza, deja de pedir permiso para soñar. Eso es convidAR: El arte de la participación."
@@ -228,7 +231,7 @@
 
                 <div>
 
-                    <article class="card card--contact">
+                    <article class="card card--contact" data-animate="bounceInLeft">
                         <h2>Sumate. <br> El barrio te espera.</h2>
     
                         <a href="./contacto.html" class="btn btn-paper">
@@ -237,7 +240,7 @@
                         </a>
                     </article>
     
-                    <article class="card card--proximo-evento">
+                    <article class="card card--proximo-evento" data-animate="bounceInRight">
                         <header>
                             <p class="section-label">Próximo evento</p>
                             <h4>Sábado 24/05</h4>
@@ -294,6 +297,7 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <script src="./scripts/animations.js"></script>
     <script src="./scripts/index.js"></script>
 </body>
 </html>

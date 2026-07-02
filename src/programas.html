@@ -16,6 +16,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     <!-- Bootstrap overrides — neo-brutalist tokens -->
     <link rel="stylesheet" href="./styles/bootstrap-overrides.css">
 
@@ -119,10 +122,10 @@
 
         <main>
             <section id="hero">
-                <h1>Programas</h1>
+                <h1 class="animate__animated animate__slideInDown">Programas</h1>
 
                 <nav class="shortcuts">
-                    <a href="#arte" class="btn">
+                    <a href="#arte" class="btn animate__animated animate__lightSpeedInLeft">
                         <div>
                             <span class="font-monospace">#01</span>
                             <p>Arte que convida</p>
@@ -133,7 +136,7 @@
                         </span>
                     </a>
 
-                    <a href="#aprender" class="btn">
+                    <a href="#aprender" class="btn animate__animated animate__lightSpeedInLeft animate__delay-150ms">
                         <div>
                             <span class="font-monospace">#02</span>
                             <p>Aprender Juntos</p>
@@ -144,7 +147,7 @@
                         </span>
                     </a>
 
-                    <a href="#familias" class="btn">
+                    <a href="#familias" class="btn animate__animated animate__lightSpeedInLeft animate__delay-300ms">
                         <div>
                             <span class="font-monospace">#03</span>
                             <p>Familias en Red</p>
@@ -158,7 +161,7 @@
             </section>
 
             <section id="arte">
-                <div class="banner bg-spot-2">
+                <div class="banner bg-spot-2" data-animate="slideInRight">
                     <hgroup>
                         <span>01</span>
                         <h4 class="font-monospace">Talleres de arte para infancias</h4>
@@ -167,7 +170,7 @@
                     <p class="font-monospace">Dirigido a: Niñas y niños de 6 a 12 años</p>
                 </div>
                 <article>
-                    <div class="content">
+                    <div class="content" data-animate="fadeInLeftBig">
                         <h2>Arte que Convida</h2>
                         <p>Espacios semanales de muralismo, música y juegos teatrales que estimulan la expresión y la confianza. Cada taller termina con una muestra abierta al barrio.</p>
 
@@ -198,7 +201,7 @@
                         </div>
                     </div>
 
-                    <div class="info">
+                    <div class="info" data-animate="fadeInRightBig">
                         <div class="card">
                             <img src="./assets/images/programas/spot-1.jpg" alt="Arte que convida - sala de taller con niños pintando un mural">
                         </div>
@@ -217,7 +220,7 @@
             </section>
 
             <section id="aprender">
-                <div class="banner bg-spot-3">
+                <div class="banner bg-spot-3" data-animate="slideInRight">
                     <hgroup>
                         <span>02</span>
                         <h4 class="font-monospace">Apoyo escolar y mentoría</h4>
@@ -226,7 +229,7 @@
                     <p class="font-monospace">Dirigido a: Adolescentes de 13 a 18 años</p>
                 </div>
                 <article>
-                    <div class="content">
+                    <div class="content" data-animate="fadeInLeftBig">
                         <h2>Aprender Juntos</h2>
                         <p>Acompañamos trayectorias educativas con tutorías personalizadas, becas de transporte y un programa de mentoras y mentores que orientan en la elección vocacional.</p>
 
@@ -257,7 +260,7 @@
                         </div>
                     </div>
 
-                    <div class="info">
+                    <div class="info" data-animate="fadeInRightBig">
                         <div class="card">
                             <img src="./assets/images/programas/spot-2.jpg" alt="Apoyo escolar y mentoría - mentora acompañando a una adolescente con sus tareas escolares">
                         </div>
@@ -276,7 +279,7 @@
             </section>
 
             <section id="familias">
-                <div class="banner bg-spot-4">
+                <div class="banner bg-spot-4" data-animate="slideInRight">
                     <hgroup>
                         <span>03</span>
                         <h4 class="font-monospace">Acompañamiento integral</h4>
@@ -285,7 +288,7 @@
                     <p class="font-monospace">Dirigido a: Familias de los barrios donde estamos presentes</p>
                 </div>
                 <article>
-                    <div class="content">
+                    <div class="content" data-animate="fadeInLeftBig">
                         <h2>Familias en Red</h2>
                         <p>Una red de cuidado que articula salud comunitaria, entrega de alimentos y acompañamiento psicológico, junto a referentes barriales y centros de salud.</p>
 
@@ -316,7 +319,7 @@
                         </div>
                     </div>
 
-                    <div class="info">
+                    <div class="info" data-animate="fadeInRightBig">
                         <div class="card">
                             <img src="./assets/images/programas/spot-3.jpg" alt="Familias en Red - centro comunitario entregando un bolson de alimentos a una familia del barrio">
                         </div>
@@ -344,6 +347,7 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    <script src="./scripts/animations.js"></script>
     <script src="./scripts/index.js"></script>
 </body>
 </html>
