@@ -21,6 +21,14 @@
     <link rel="stylesheet" href="./styles/estructura.css">
 
     <!-- Script para funcionalidades generales -->
+    <script>
+      (function() {
+        var theme = localStorage.getItem('theme');
+        if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
     <script src="./scripts/index.js" async defer></script>
 </head>
 
@@ -105,7 +113,12 @@
                 <span>seccion:</span> <span class="badge">02</span> <span>Territorios</span>
             </p>
 
-            <time datetime="2026-04-24T00:00:00.000Z" id="time-now">Viernes 24 de abril de 2026</time>
+            <div class="header-actions">
+                <time datetime="2026-04-24T00:00:00.000Z" id="time-now">Viernes 24 de abril de 2026</time>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar modo oscuro">
+                    <i class="icon-moon"></i>
+                </button>
+            </div>
         </header>
 
         <main>

@@ -6,6 +6,7 @@ html, body {
 body {
     margin: 0;
     background-color: var(--color-paper);
+    color: var(--color-ink);
     display: flex;
     word-break: break-word;
 }
@@ -169,6 +170,12 @@ body > aside {
         background-color: var(--color-paper);
         padding: 0.75rem 2rem;
 
+        & .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
         & p, & time {
             font-family: monospace;
             text-transform: uppercase;
@@ -186,6 +193,31 @@ body > aside {
 
         & #today-field{
             text-transform: capitalize;
+        }
+    }
+
+    & .theme-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(--color-ink);
+        background: none;
+        color: var(--color-ink);
+        cursor: pointer;
+        padding: 0.375rem;
+        width: 2rem;
+        height: 2rem;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            background-color: var(--color-ink);
+            color: var(--color-paper);
+            transform: translate(-2px, -2px);
+            box-shadow: var(--shadow-ink);
+        }
+
+        & i {
+            font-size: 1.125rem;
         }
     }
 

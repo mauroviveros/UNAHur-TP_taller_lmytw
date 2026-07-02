@@ -57,7 +57,7 @@ section#arte,
 section#aprender,
 section#familias {
     /* Evita que anchors sean tapados por header o elementos sticky */
-    scroll-margin-top: 2.5rem;
+    scroll-margin-top: 3.5rem;
 
     & .banner {
         border-bottom: 3px solid var(--color-ink);
@@ -66,7 +66,7 @@ section#familias {
         align-items: center;
         justify-content: space-between;
         position: sticky;
-        top: 2.5rem;
+        top: 3.5rem;
 
         & > hgroup {
             display: flex;

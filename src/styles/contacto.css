@@ -118,6 +118,7 @@ section#contacto {
                 font-size: 1rem;
                 box-shadow: 3px 3px 0 0 var(--color-ink);
                 transition: all 0.2s ease-in-out;
+                color: var(--color-ink);
                 
                 &:focus {
                     outline: none;
