@@ -1,7 +1,8 @@
-# Trabajo Práctico Grupo 11 - ConvidAR
+# Trabajo Práctico Grupo 11 — ConvidAR
 
 - Materia: **Taller de Lenguajes de Marcado y Tecnologías Web**
-- Lugar: **Universidad Nacional de Hurlingham (UNAHur)**
+- Universidad: **Universidad Nacional de Hurlingham (UNAHur)**
+- Año: **2026**
 
 ---
 
@@ -11,38 +12,70 @@
 - Ricardo Ruiz
 - Tomás Dalke
 
-## 📋 Descripción del Proyecto
+---
 
+## 📖 Descripción del Proyecto
 
-ConvidAR es un sitio web informativo diseñado para conectar ciudadanos con sus comunidades locales. La plataforma proporciona acceso centralizado a información sobre territorios, centros comunitarios y canales de contacto directo con organizaciones de base.
+ConvidAR es el sitio web de una ONG comunitaria que conecta ciudadanos con programas
+barriales gratuitos. La plataforma centraliza información sobre actividades artísticas,
+educativas y familiares, facilitando el acceso a la participación comunitaria.
 
-**Propósito**: Resolver el problema de fragmentación de información comunitaria, creando un único punto de acceso donde los ciudadanos pueden descubrir iniciativas, espacios de participación y recursos disponibles en sus territorios.
+**Diseño neo-brutalista**: bordes gruesos, sombras sólidas sin blur, paleta de alto
+contraste con 4 colores de acento, tipografía expresiva y modo oscuro completo.
 
-**Estructura del producto**:
-- 🏠 **Inicio** - Presentación de ConvidAR y su propuesta de valor
-- 🗺️ **Territorio** - Información geográfica y contextual de los espacios de acción
-- 🏢 **Centros Comunitarios** - Catálogo detallado de centros, programas y servicios disponibles
-- 📧 **Contacto** - Formulario para consultas, sugerencias y participación
+---
 
-**Tecnología**: Desarrollado como sitio web estático con HTML5 y CSS3, optimizado para máxima accesibilidad, rapidez de carga y compatibilidad multiplataforma. El despliegue automático garantiza que siempre esté disponible la información más actualizada.
-## 🎯 Sobre ConvidAR
+## 📜 Páginas
 
-### Motivaciones
+| Página | Archivo | Contenido |
+|---|---|---|
+| Inicio | `src/index.html` | Hero, vista previa de programas, frase motivacional, CTA de contacto |
+| Programas | `src/programas.html` | Arte que convida, Aprender juntos, Familias en red (con anclas) |
+| Nosotros | `src/nosotros.html` | Historia, valores, cronología, equipo, ficha técnica |
+| Contacto | `src/contacto.html` | Tarjetas de info, formulario con pre-selección por URL |
 
-- **Fortalecer la participación comunitaria**: Creemos que una comunidad informada es una comunidad más comprometida. ConvidAR busca romper las barreras de información y hacer accesible el conocimiento sobre los espacios y programas disponibles en cada territorio.
+---
 
-- **Democratizar el acceso**: No todos tienen facilidad para encontrar información sobre centros comunitarios, actividades locales y oportunidades de participación. Queremos que esta información esté al alcance de todos, sin fricciones.
+## 🧱 Estructura del Proyecto
 
-- **Generar redes de apoyo**: Al conectar a las personas con sus comunidades, fomentamos la creación de redes de apoyo y colaboración que fortalecen el tejido social.
+```
+src/
+├── assets/
+│   └── images/              # hero.jpg, nosotros-equipo.jpg, spot-*.jpg
+├── scripts/
+│   ├── index.js             # Toggle dark/light mode + reloj en vivo
+│   ├── animations.js        # IntersectionObserver + Animate.css on scroll
+│   └── form.js              # Pre-selección de dropdown vía ?programa= URL param
+├── styles/
+│   ├── variables.css        # Design tokens (colores, tipografía, sombras, bordes)
+│   ├── bootstrap-overrides.css  # Pisa variables de Bootstrap con diseño de la pagina
+│   ├── estructura.css       # Layout base, sidebar, header bar, breakpoints
+│   ├── index.css            # Estilos de Inicio
+│   ├── programas.css        # Estilos de Programas
+│   ├── nosotros.css         # Estilos de Nosotros
+│   └── contacto.css         # Estilos de Contacto
+├── index.html
+├── programas.html
+├── nosotros.html
+└── contacto.html
+```
 
-### Enfoque
+---
 
-ConvidAR está pensado como una herramienta clara, accesible y orientada al usuario. Prioriza:
+## 📝 Funcionalidades JavaScript
 
-- **Información clara y organizada** sobre territorios y centros comunitarios
-- **Accesibilidad** - Una interfaz intuitiva que funciona en cualquier dispositivo
-- **Contacto directo** - Un canal de comunicación abierto para consultas y sugerencias
-- **Descubrimiento** - Ayudar a los usuarios a encontrar exactamente lo que necesitan en sus comunidades
+| Script | Funcionalidad |
+|---|---|
+| `index.js` | Modo oscuro/claro (`data-theme` + `data-bs-theme`) persistido en `localStorage`. Reloj en vivo con `setInterval`. |
+| `animations.js` | `IntersectionObserver` que detecta elementos con `data-animate` en el viewport y les inyecta clases de Animate.css. |
+| `form.js` | Lee `?programa=arte` (o `aprender`/`familias`) de la URL y pre-selecciona el dropdown del formulario de contacto. |
+
+---
+
+## 🚀 Deploy
+
+Cada push a `main` dispara un workflow de GitHub Actions (`.github/workflows/deploy.yml`)
+que publica la carpeta `src/` en GitHub Pages automáticamente.
 
 ---
 
@@ -52,3 +85,6 @@ Consulta los archivos en la carpeta `docs/`:
 - [Guía de GitHub](docs/guia-github.md) - Introducción a Git y GitHub
 - [Cómo Subir Cambios](docs/como-subir-cambios.md) - Instrucciones para contribuir
 - [Trabajo práctico - Parte 1.pdf](docs/Trabajo%20práctico%20-%20Parte%201.pdf) - Trabajo Práctico
+- [Trabajo práctico - Parte 2.pdf](docs/Trabajo%20práctico%20-%20Parte%202.pdf) - Trabajo Práctico
+- [Trabajo práctico - Parte 3.pdf](docs/Trabajo%20práctico%20-%20Parte%203.pdf) - Trabajo Práctico
+- [Trabajo práctico - Parte 4.pdf](docs/Trabajo%20práctico%20-%20Parte%204.pdf) - Trabajo Práctico
