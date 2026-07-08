@@ -184,7 +184,7 @@ body > aside {
             gap: 0.5rem;
         }
 
-        & p, & time {
+        & p, & span#time-now {
             font-family: monospace;
             text-transform: uppercase;
             font-size: 0.75rem;
